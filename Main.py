@@ -7,8 +7,11 @@ def PrintTodoList():
 
 def GetTodoTask():
     Todo = input ("What do you want to do now? ")
+    return Todo
+
+def GetTodoTaskPriority():
     Priority = input ("Rank this task by importance:")
-    return Todo, Priority
+    return Priority
 
 
 def AddTodoTaskToList():
@@ -16,9 +19,10 @@ def AddTodoTaskToList():
 
 while True:
     PrintTodoList()
-    Todo, Priority = GetTodoTask()
+    Todo = GetTodoTask()
     if Todo == 'stop':
         break
     else:
+        Priority = GetTodoTaskPriority()
         AddTodoTaskToList() 
         
