@@ -6,7 +6,7 @@ def PrintTodoList():
 
 
 def GetTodoTask():
-    Todo = input ('What do you want to do now? ')
+    Todo = input ("What do you want to do now? ")
     return Todo
 
 
